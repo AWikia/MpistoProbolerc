@@ -176,7 +176,7 @@ body:after {
 		text-decoration:none!important;
 		font-size:18px;
 	}
-	.navbar .link:hover {
+	.navbar .link:hover, .navbar .dropdown:hover .link {
 		background-color:rgba(248,248,248,0.35);
 		color:white;
 	}
