@@ -21,16 +21,17 @@ Raleway = Rest
 @import url('https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700|M+PLUS+Rounded+1c:100,300,400,500,700,800|Mitr:200,300,400,500,600,700|Nanum+Gothic:400,700,800|Raleway:100,200,300,400,500,600,700,800,900&subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,japanese,korean,latin-ext,thai,vietnamese');
 /* Comfortaa */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900|Noto+Sans+JP:100,300,400,500,700,900|Noto+Sans+KR:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,greek,greek-ext,japanese,korean,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Noto+Sans+JP:100,300,400,500,700,900|Noto+Sans+KR:100,300,400,500,700,900|Noto+Sans+SC:100,300,400,500,700,900|Noto+Sans+TC:100,300,400,500,700,900|Noto+Sans:400,700&subset=chinese-simplified,chinese-traditional,cyrillic,cyrillic-ext,devanagari,greek,greek-ext,hebrew,japanese,korean,latin-ext,vietnamese');	
+
 	html {
-	background-color:#e995ca;
+		background-color:#e995ca;
 	}
 
 	body {
 		width:100%;
 		height:100%;
 /*		font-family:Comfortaa, "Mitr",  "M PLUS 1p", "Gothic A1";*/
-		font-family:"Fira Sans", "Noto Sans JP", "Noto Sans KR", sans-serif;
+		font-family:"Fira Sans", "Arimo", "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Sans TC", "Noto Sans SC", sans-serif;
 		margin:0;
 		font-weight:500;
 		background-image:none;
@@ -116,7 +117,6 @@ body:after {
 		box-shadow: 0 0 3px #111;
 		color:whitesmoke;
 		border-spacing:0;
-		border-collapse:collapse;
 		position:fixed;
 		z-index:90;
 	    font-family:Source Sans Pro, "Prompt",  "M PLUS 1p", "Gothic A1";
@@ -564,25 +564,27 @@ clear:both;
 
 /* Footer */
 footer.footer {
-font-family:Source Sans Pro, "Prompt",  "M PLUS 1p", "Gothic A1";
 width:100%;
 min-height:50px;
-border-top:2px solid #ff5b63;
+/*border-top:2px solid #ff5b63;
+*/
 margin:30px 0 0;
-color:#113311;
-background-color:#C8B2D5;
+background-color:#113311;
+color:#C8B2D5;
 position:relative;
 z-index:49;
 padding:0 18px;
-box-shadow:0 0 9px #ff5b63, 0 0 2.5px #000, 0 0 1.5px #fff;
+box-shadow:0 0 9px #ff5b63, 0 0 2.5px #113311, 0 0 1.5px #C8B2D5;
+box-shadow: 0 0 3px #113311, 0 0 3px #C8B2D5;
 box-sizing:border-box;
+font-family:Source Sans Pro, "Prompt",  "M PLUS 1p", "Gothic A1";
 }
 
-
 footer.footer .wrapper {
-border:1px solid #ff5b63;
+/*border:1px solid #ff5b63;
 border-top-style:hidden;
 border-bottom-style:hidden;
+*/
 width:100%;
 max-width:926px;
 border-spacing:0;
@@ -598,7 +600,8 @@ min-height:30px;
 
 footer.footer .wrapper .footer-container > * > th,
 footer.footer .wrapper .footer-container > * > td {
-border:1px solid #ff5b63;
+/*border:1px solid #ff5b63;
+*/
 box-sizing:border-box;
 }
 
@@ -607,12 +610,11 @@ width:100%;
 }
 
 footer.footer .wrapper .footer-container th h1 {
-font-weight:700;
-font-size:33px;
+font-weight:600;
+font-size:36px;
 display:inline;
 vertical-align:middle;
 margin-left:8px;
-font-family:"Raleway", "Jura", "Mitr", "M PLUS Rounded 1c", "Nanum Gothic", cursive;
 }
 
 footer.footer .wrapper .footer-container th * {
@@ -620,7 +622,7 @@ vertical-align:middle;
 }
 
 footer.footer .wrapper .footer-container th.footer-bar h3 {
-font-size:17px;
+font-size:20px;
 }
 
 footer.footer .wrapper .footer-container th {
@@ -634,7 +636,7 @@ footer.footer .wrapper .footer-container th:not(.footer-bar) {
   height:65px;
 }
 
-footer.footer .wrapper .footer-container th::after {
+/*footer.footer .wrapper .footer-container th::after {
 position:absolute;
 top:0;
 left:0;
@@ -643,20 +645,23 @@ width: 100%;
 z-index:-1;
 content:"";
 display:block;
-background-color:#000;
+background-color:#113311;
 opacity:0.11;
 }
+*/
 
 footer.footer .wrapper .footer-container td {
-font-size:17px;
+/*font-size:17px;
+padding:4px 8px 8px;
+*/
 position:relative;
 z-index:1;
 font-weight:500;
-padding:4px 8px 8px;
+text-align:left;
 }
 
 
-footer.footer .wrapper .footer-container td::after {
+/*footer.footer .wrapper .footer-container td::after {
 position:absolute;
 top:0;
 left:0;
@@ -665,29 +670,36 @@ width: 100%;
 z-index:-1;
 content:"";
 display:block;
-background-color:#000;
+background-color:#113311;
 opacity:0.035;
 }
+*/
 
 footer.footer .wrapper .footer-container td h2 {
-font-size:24px;
-font-weight:bolder;
+	font-size:24px;
+	font-weight:bolder;
+	text-align:left;
+	font-family:"Raleway", "Jura", "Mitr", "M PLUS Rounded 1c", "Nanum Gothic", cursive;
 }
 
 footer.footer .wrapper .footer-container td a {
+/*
+padding:6px 2px;
+*/
 display:block;
+-o-transition:all 150ms ease 12ms;
 transition:all 150ms ease 12ms;
 text-decoration:none;
-padding:6px 2px;
+line-height:1.5;
+-o-transition:all 500ms;
+transition:all 500ms;
+font-size:16px;
 clear:both;
-float:left;
- color:#ff5b63;
-border-bottom:4px solid #113311;
+color:#ff5b63;
 }
 
 footer.footer .wrapper .footer-container td a:hover {
-    color:#113311;
-    border-color:#ff5b63;
+    color:#C8B2D5;
 }
 
 
@@ -743,23 +755,6 @@ footer.footer .wrapper .footer-container td a:hover {
 		height:50px;
 	}
 
-
-footer.footer .wrapper .footer-container th.footer-bar h3 {
-font-size:14px;
-}
-
-footer.footer .wrapper .footer-container td {
-padding:2px 4px 4px;
-font-size:14px;
-}
-
-footer.footer .wrapper .footer-container td h2 {
-font-size:20px;
-}
-
-footer.footer .wrapper .footer-container th h1 {
-font-size:28px;
-}
 
 }
 
