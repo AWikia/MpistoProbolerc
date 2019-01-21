@@ -48,6 +48,9 @@ Raleway = Rest
 
 	html {
 		background-color:#e995ca;
+		scrollbar-color:#ee0000 #e995ca;
+		scrollbar-color:var(--button-bg, #ee0000) #e995ca;
+		transition:scrollbar-color 250ms ease-in-out 2ms;
 	}
 
 	body {
@@ -406,6 +409,14 @@ button:not([secondary]):not([tabbed]):hover::after, button:not([secondary]):not(
 		text-align:center;
 	}
 
+	.page-header h1 {
+		margin:-14px 0 8px;
+		line-height:1.5;
+		border-bottom:1px solid #ff5b63;
+		-webkit-text-stroke:1px #ff5b63;
+		font-size:40px;
+		text-align:left;
+	}
 
 @-webkit-keyframes color-header-hover {
 	0%		{ background-color:transparent; }
@@ -473,6 +484,14 @@ button:not([secondary]):not([tabbed]):hover::after, button:not([secondary]):not(
 		padding:0 17px;
 		-webkit-text-stroke:1.5px rgba(23,23,23,0.7);
 	}
+	
+		.color-header .title a {
+			color:inherit;
+		}
+
+		.color-header .title a:hover {
+			color:white;
+		}
 	
 	.button-group {
 	display:inline-table;
@@ -631,6 +650,10 @@ box-sizing:border-box;
 
 footer.footer .wrapper .footer-container th {
 width:100%;
+}
+
+footer.footer .wrapper .footer-container th .wordmark {
+	max-height:65px;
 }
 
 footer.footer .wrapper .footer-container th h1 {
